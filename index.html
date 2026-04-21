@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Web Services</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+  background: #222;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+header a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: white;
+}
+.hero h1 {
+  font-size: 40px;
+}
+
+/* Button */
+.btn {
+  padding: 12px 25px;
+  background: white;
+  color: #333;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #333;
+  color: white;
+}
+
+/* Services */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px;
+}
+.card {
+  width: 250px;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #f9f9f9;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+/* Contact */
+.contact {
+  padding: 40px;
+  text-align: center;
+  background: #eee;
+}
+input, textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h3>Pranita Web</h3>
+  <div>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>I Create Modern Websites</h1>
+  <p>Landing Pages | Business Sites | Portfolio</p>
+  <p style="font-size:20px; font-weight:bold; color:yellow;">Starting at ₹499</p>
+  <button class="btn" onclick="scrollToContact()">Hire Me</button>
+</section>
+
+<section id="services" class="services">
+  <div class="card">
+    <h3>Landing Page</h3>
+    <p>Fast & responsive design</p>
+  </div>
+  <div class="card">
+    <h3>Portfolio</h3>
+    <p>Show your work beautifully</p>
+  </div>
+  <div class="card">
+    <h3>Website Fix</h3>
+    <p>Edit & improve your site</p>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Me</h2>
+  <input type="text" placeholder="Your Name"><br>
+  <input type="email" placeholder="Your Email"><br>
+  <textarea placeholder="Your Message"></textarea><br>
+  <button class="btn" onclick="submitForm()">Send Message</button>
+</section>
+
+<footer>
+  <p>© 2026 Pranita Web Services</p>
+</footer>
+
+<script>
+function scrollToContact() {
+  document.getElementById("contact").scrollIntoView();
+}
+
+function submitForm() {
+  alert("Message sent successfully! (Demo)");
+}
+</script>
+ 
+<a href="mailto:pranitapskulkarni@email.com?subject=Website Inquiry&body=Hi, I want a website"
+style="position:fixed;bottom:20px;right:20px;background:#007bff;
+color:white;padding:12px 18px;border-radius:30px;text-decoration:none;">
+📧 Email Me
+</a>
+<a href="https://wa.me/919945928009" target="_blank"
+style="position:fixed;bottom:20px;right:20px;background:#25D366;
+color:white;padding:10px;border-radius:50%;">💬</a>
+</body>
+</html>
